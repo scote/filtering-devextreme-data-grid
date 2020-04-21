@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DxDataGridComponent,
-         DxDataGridModule,
+import { DxDataGridModule,
          DxSelectBoxModule,
          DxCheckBoxModule } from 'devextreme-angular';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [
+        AppRoutingModule,
         BrowserModule,
         DxDataGridModule,
         DxSelectBoxModule,
@@ -18,3 +19,4 @@ import { AppComponent } from './app.component';
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
